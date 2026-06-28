@@ -58,7 +58,6 @@ export default function App() {
   const diaryCount = entries.filter(e => e.type === 'diary').length;
   const journalCount = entries.filter(e => e.type === 'journal').length;
   const totalWords = entries.reduce((acc, e) => acc + e.content.trim().split(/\s+/).filter(Boolean).length, 0);
-  const streak = Math.min(entries.length, 7); // simplified
 
   function openNew(type: EntryType) {
     setEditorType(type);

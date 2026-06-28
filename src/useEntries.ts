@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { Entry, EntryType } from './types';
+import type { Entry } from './types';
 
 const STORAGE_KEY = 'digi-diary-entries';
 
